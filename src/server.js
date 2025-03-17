@@ -1,5 +1,6 @@
 const express = require("express");
 const pg = require("pg");
+const region = process.env.RAILWAY_REPLICA_REGION;
 const port = process.env.PORT || 4000;
 const app = express();
 const pool = new pg.Pool();
@@ -33,5 +34,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`[${region}] Example app listening at http://localhost:${port}`);
 });
