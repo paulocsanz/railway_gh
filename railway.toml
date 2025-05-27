@@ -1,2 +1,6 @@
 [deploy]
-numReplicas = 2
+multiRegionConfig = {
+  localhost = {
+    numReplicas = 50
+  }
+}
