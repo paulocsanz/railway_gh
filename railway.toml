@@ -1,6 +1,6 @@
 [deploy]
 multiRegionConfig = {
   localhost = {
-    numReplicas = 50
+    numReplicas = 2
   }
 }
