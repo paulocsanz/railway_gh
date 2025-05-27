@@ -1,4 +1,5 @@
 [deploy]
+restartPolicyType = "ALWAYS"
 multiRegionConfig = {
   localhost = {
     numReplicas = 2
