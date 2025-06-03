@@ -1,2 +1,2 @@
 [deploy]
-preDeployCommand = "pnpm install"
+preDeployCommand = "pnpm2 install"
