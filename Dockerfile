@@ -11,6 +11,8 @@ COPY package*.json ./
 RUN apk add --no-cache bash
 RUN apk add --no-cache curl
 
+RUN sleep 90
+
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
